@@ -1,5 +1,6 @@
 /* CSS Document */
- body,div,span,a,img,ul,li,p{
+ *{
+	 
     margin: 0;
     padding: 0;
 }
