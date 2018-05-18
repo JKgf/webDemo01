@@ -1,0 +1,236 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	font-family: 微软雅黑;
+	margin: 0;
+}
+.container{
+	width: 1600px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+	
+.wrapper{
+	width: 1600px;
+	background: url(../images/5_01.png);
+	
+}	
+	
+.wrapper h2{
+	color: white;
+	margin-left: 250px;
+	line-height: 70px;
+}	
+
+.banner
+{
+	width: 1182px;
+	height: 60px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.picture{
+	float: left;
+	margin-top: -30px;
+}
+.sidenav{
+	width: 1366px;
+	height: 100px;
+	margin-top: 60px;
+	
+}
+
+.sidenav a{
+	line-height: 30px;
+	text-decoration: none;
+	color: #383838;
+	display: block;
+}
+
+.nav{
+	
+	display: inline-block;
+	float: left;
+	text-align: center;
+	padding: 0 60px;
+	letter-spacing: 3px;
+}	
+.list{
+	float: none;
+	background-color: #f78e8e;
+	padding: 8px;
+}	
+
+.list a{
+	color: white;
+	text-align: center;
+}
+.list a:hover{
+	color: #000;
+
+}
+	
+.dropdown{
+	position: absolute;
+	display: none;
+}	
+	
+.nav:hover .dropdown{
+	display: block;
+}	
+	
+.carousel{
+	width: 1182px;
+	height: 400px;
+	margin: 20px auto;
+}	
+	
+.section1{
+	width: 1182px;
+	height: 350px;
+	border: 1px solid blue;
+	margin:  0 auto;
+}
+	
+.section2{
+	width: 1182px;
+	height: 350px;
+	border: 1px solid blue;
+	margin:  10px auto;
+}	
+.section3{
+	width: 1182px;
+	height: 250px;
+	margin:  10px auto;
+}		
+	
+.font{
+	font-size: 24px;
+}
+.more{
+	float: right;
+	font-size: 15px;
+}
+
+.line{
+	width: 390px;
+	height: 1px;
+	background-color: red;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.above{
+	width: 1182px;
+	height: 40px;
+}
+.below{
+	width: 1182px;
+	height: 320px;
+}
+
+.news1{
+	float: left;
+	width: 480px;
+	height: 290px;
+	
+}
+	
+.new2{
+	float: left;
+	width: 300px;
+	height: 320px;
+	border: 1px solid #09F518;
+
+}
+
+.center{
+	width: 270px;
+	height: 100px;
+	border: 1px solid red;
+}
+.new3{
+	float: left;
+	width: 400px;
+	height: 290px;
+	border: 1px solid #09F518;
+}
+	
+.section1 a:hover{
+	color: red;
+}
+
+
+	
+.news3 ul{
+	
+}	
+	
+.logo{
+	float: left;
+	margin-left: 5px;
+}	
+
+
+.logo p{
+	text-align: center;
+	margin-top: 20px;
+}
+	
+.footer{
+	width: 1600px;
+	height: 160px;
+	border: 1px solid red;
+	margin: 0 auto;
+	background: url(../images//5_60.png);
+}		
+	
+	
+.footer img{
+	margin-left: 210px;
+	margin-top: 60px;
+	margin-right: 20px;
+	float: left;
+}	
+	
+.word{
+	font-size: 15px;
+	margin-top: 65px;
+}	
+
+.footer a{
+	color: aliceblue;
+}	
+	
+.tip{
+	margin-top: 30px;
+	margin-right: 300px;
+	float: right;
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
