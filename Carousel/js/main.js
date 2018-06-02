@@ -7,9 +7,15 @@
         setInterval(function(){
          
             images[pos].style.display = 'none';
-            pos = ++pos == len ? 0 : pos;
+            //pos = ++pos == len ? 0 : pos;
+            if (++pos == len) {
+            		pos = 0; 		
+            }
+            else{
+            	pos = pos;
+            }
             images[pos].style.display = 'inline';
          
-        },1000);
+        },3000);
          
     };
