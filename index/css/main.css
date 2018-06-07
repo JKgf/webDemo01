@@ -1,6 +1,6 @@
 /* CSS Document */
  *{
-	 
+
     margin: 0;
     padding: 0;
 }
@@ -13,6 +13,7 @@ body{font-family: 黑体;}
 }
 
 .header{
+	background: url("../images/demo_01.png");
 	height: 251px;
 	width: 100%;
 }
