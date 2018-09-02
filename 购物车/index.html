@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <article id="shopping_cart">
+    <section class="cartMain">
+        <header class="cartMain_header">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all" :class="fetchData.status?'mark':''" @click="cartchoose()"></label>
+                    全选
+                </li>
+                <li class="list_conformation">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_others">省略</li>
+               
+            </ul>
+        </header>
+
+         <section class="cartBox" v-for="item in fetchData.list" key="index">
+            <section class="shop_info">
+                <section class="all_check">
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop" :class="item.check?'mark':''" @click="shopchoose(item)"></label>
+                </section>
+                <section class="shop_name">
+                    店铺：<a href="javascript:;">{{item.shop_name}}</a>
+                </section>
+            </section>
+            <section class="order_content">
+                <ul class="order_lists" v-for="pro in item.products">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2" :class="pro.checked?'mark':''" @click="choose(item,pro)"></label>
+                    </li>
+                    <li class="list_conformation">
+                        <section class="list_img"><a href="javascript:;"><img :src="pro.img" alt=""></a></section>
+                        <section class="list_text"><a href="javascript:;">{{pro.text}}</a></section>
+                    </li>
+                    <li class="list_info">
+                        <p>品牌：默认</p>
+                        <p>尺寸：X*Y*Z(cm)</p>
+                        <p>净含量：xxx(g)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥{{pro.price}}</p>
+                    </li>
+                    <li class="list_amount">
+                        <section class="amount_box">
+                            <a href="javascript:;" class="reduce reSty" @click="reduce(pro)">-</a>
+                            <input type="text" v-model="pro.num" class="sum" v-on:input="calculate(pro)">
+                            <a href="javascript:;" class="plus" @click="add(pro)">+</a>
+                        </section>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥{{pro.sum}}</p>
+                    </li>
+                    </li>
+                </ul>
+            </section>
+        </section> 
+        <footer class="bar-wrapper">
+            <section class="bar-right">
+                <section class="piece">已选商品<strong class="piece_num">{{this.fetchData.allnum}}</strong>件</section>
+                <section class="totalMoney">合计(不含运费): <strong class="total_text">￥{{this.fetchData.allsum}}</strong></section>
+                <section class="calBtn"><a href="javascript:;">结算</a></section>
+            </section>
+        </footer>
+    </section>
+    </article>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
